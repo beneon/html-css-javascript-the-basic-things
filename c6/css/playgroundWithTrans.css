@@ -1,0 +1,26 @@
+body{
+  margin:3%;
+}
+div{
+  background:rgb(230, 230, 230);
+  width:80%;
+  padding:10px 0;
+  margin:3px auto;
+  text-align: center;
+}
+div{
+  transition-property: width;
+  transition-duration: .3s;
+}
+div:hover{
+  width:50%;
+}
+p{
+  font-family: sans-serif,monospace;
+}
+p:last-of-type::before{
+  display:block;
+  content:"------the bottom lines------";
+  font-family: monospace;
+  text-align: center;
+}
