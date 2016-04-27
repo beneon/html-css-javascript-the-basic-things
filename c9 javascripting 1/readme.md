@@ -14,7 +14,7 @@
 ### 获取对象的方法
 - document.getElementById(id)
 - document.getElementByClassName(class)
-- element.getElementById(id).innerHTML
+- element.innerHTML
 - element.style
 - element.setAttribute(attribute,value)
 - element.removeAttribute(attribute)
@@ -100,4 +100,21 @@ console.log(10+x);
 - number：数字
 - string："字符串一定要在引号的里面，英文引号"
 - boolean：True或者是False，两个值
-- object：DOM下面的一个节点
+- object：object的概念不容易理解，但是可以举例子，比如：DOM下面的一个节点
+
+### 运算
+- 四则运算：`+ - * / %`
+- 比较 `< > <= >= == !=`
+
+## 用javascript修改网页
+### 思路：
+- 获取element
+- 修改element的innerHTML或者style
+
+### 获取element
+- document.getElementById(id)
+- document.getElementByClassName(class)
+
+### 修改innerHTML或者style
+- element.innerHTML
+- element.style

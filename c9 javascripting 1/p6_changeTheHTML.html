@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>make some change to the html</title>
+    <style>
+      #bigBlock{
+        width:316px;
+        height:217px;
+        text-align: center;
+        line-height: 200px;
+        color:white;
+        background-color: black;
+        margin: 20px auto;
+      }
+      #reset{
+        display: block;
+        margin: 10px auto;
+      }
+      #yourTurn{
+        margin: 20px auto;
+        width:500px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bigBlock" onclick="changeBackground()">
+      it's just a block now
+    </div>
+    <button type="button" id="reset" onclick="resetStyle()">reset</button>
+    <div id="yourTurn" onclick="divTest()">
+      把这里的文字换成“Div test”，并且把背景设置成黄色
+    </div>
+    <script>
+      var el
+      var innerContent;
+      //为什么要在这里先声明这两个变量？
+      function changeBackground(){
+        el = document.getElementById("bigBlock");
+        background = el.style.background;
+        color = el.style.color;
+        el.style.background = "url('img/bluebrick.png')";
+        innerContent = el.innerHTML;
+        el.innerHTML = "Wow, it changed!"
+        //44行和42行做的是什么事情？
+      }
+      function resetStyle(){
+        el.style = "";
+        el.innerHTML = innerContent;
+      }
+      function divTest(){
+        // 代码在这个地方写
+      }
+    </script>
+  </body>
+</html>
