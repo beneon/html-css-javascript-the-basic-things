@@ -7,6 +7,8 @@
 本课程关注的是html，css以及javascript体系下的网页制作，作为入门课程，涉及内容比较粗浅。如果您有任何建议欢迎提出。
 
 ## 参考资料
-![html参考课程](https://www.coursera.org/learn/html/home/info)
-![css参考课程](https://www.coursera.org/learn/introcss/home/info)
-![javascript参考课程](https://www.coursera.org/learn/javascript/home/info)
+[html参考课程](https://www.coursera.org/learn/html/home/info)
+
+[css参考课程](https://www.coursera.org/learn/introcss/home/info)
+
+[javascript参考课程](https://www.coursera.org/learn/javascript/home/info)
