@@ -13,20 +13,21 @@
       value for b:
     </p>
     <input type="text" id="valueB" value="">
-    <button type="button" id="calculate" onclick="calculate()">calculate</button>
+    <button type="button" id="calculate" onclick="calculate">calculate</button>
     <p>
       result:<span id="result"></span>
     </p>
     <script>
       function calculate(){
-        console.log("clicked");
         var a = parseInt(document.getElementById("valueA").value);
         console.log(a+", it's type is "+typeof(a))
         // 现在写一下这些代码
         // - 获取id为valueB的输入框的内容并转换为数字格式，存到变量b里面
         // - 计算a*b，用console.log()输出
         // - 判断a是不是大于b，如果a>b，输出True，否则输出false。
-        
+        var b=document.getElementById("valueB").value
+
+        console.log(a*b);
       }
     </script>
   </body>

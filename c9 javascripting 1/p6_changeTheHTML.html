@@ -37,7 +37,7 @@
       var innerContent;
       //为什么要在这里先声明这两个变量？
       function changeBackground(){
-        el = document.getElementById("bigBlock");
+        var el = document.getElementById("bigBlock");
         background = el.style.background;
         color = el.style.color;
         el.style.background = "url('img/bluebrick.png')";
@@ -50,7 +50,10 @@
         el.innerHTML = innerContent;
       }
       function divTest(){
-        // 代码在这个地方写
+        var el=document.getElementById("yourTurn")
+        el.innerHTML ="Div test"
+        el.style.backgroundColor="yellow"
+        console.log(el)
       }
     </script>
   </body>
