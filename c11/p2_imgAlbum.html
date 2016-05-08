@@ -21,12 +21,12 @@
   </head>
   <body>
     <ul>
-      <li><img src="img/img1.jpg" alt="img1" onload="setThePadding(this)"/></li>
-      <li><img src="img/img2.jpg" alt="img2" onload="setThePadding(this)"/></li>
-      <li><img src="img/img3.jpg" alt="img3" onload="setThePadding(this)"/></li>
-      <li><img src="img/img4.jpg" alt="img4" onload="setThePadding(this)"/></li>
-      <li><img src="img/img7.jpg" alt="img5" onload="setThePadding(this)"/></li>
-      <li><img src="img/img6.jpg" alt="img6" onload="setThePadding(this)"/></li>
+      <li><img src="img/img1.jpg" alt="img1" onload="setThePadding(this)" onclick="picDisp(this)"/></li>
+      <li><img src="img/img2.jpg" alt="img2" onload="setThePadding(this)" onclick="picDisp(this)"/></li>
+      <li><img src="img/img3.jpg" alt="img3" onload="setThePadding(this)" onclick="picDisp(this)"/></li>
+      <li><img src="img/img4.jpg" alt="img4" onload="setThePadding(this)" onclick="picDisp(this)"/></li>
+      <li><img src="img/img7.jpg" alt="img5" onload="setThePadding(this)" onclick="picDisp(this)"/></li>
+      <li><img src="img/img6.jpg" alt="img6" onload="setThePadding(this)" onclick="picDisp(this)"/></li>
     </ul>
     <script>
     imgs = document.getElementsByTagName("img")
@@ -39,6 +39,9 @@
     function getTheHeight(elem){
       console.log(elem.alt+":"+elem.width+","+elem.height);
       return elem.height;
+    }
+    function picDisp(ele){
+      
     }
     </script>
   </body>

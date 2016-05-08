@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>this</title>
+    <style media="screen">
+      div{
+        width:200px;
+        height:200px;
+        border-radius:10px;
+        background-color:blue;
+        margin:10px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div onclick="changeColor(this)">click me</div>
+    <div onclick="changeColor(this)">click me</div>
+    <script>
+      function changeColor(e){
+        e.style.backgroundColor="lightgray";
+      }
+    </script>
+
+  </body>
+</html>
