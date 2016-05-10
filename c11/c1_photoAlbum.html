@@ -14,6 +14,10 @@
         display:inline-block;
       }
       li img{
+        width:350px;
+        margin:20px;
+      }
+      li img.b{
         width:250px;
         margin:10px;
       }
@@ -57,10 +61,16 @@
         position:relative;
         left:-25px;
       }
+      .a{
+        background-color: white;
+      }
+      .b{
+        background-color: red;
+      }
     </style>
   </head>
   <body>
-    <ul id="imgList">
+    <ul id="imgList" class="a">
       <li><img src="img/img1.jpg" alt="img1" onload="setThePadding(this)" onclick="picDisp(this)"/></li>
       <li><img src="img/img2.jpg" alt="img2" onload="setThePadding(this)" onclick="picDisp(this)"/></li>
       <li><img src="img/img3.jpg" alt="img3" onload="setThePadding(this)" onclick="picDisp(this)"/></li>
