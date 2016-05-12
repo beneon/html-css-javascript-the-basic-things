@@ -14,10 +14,6 @@
         display:inline-block;
       }
       li img{
-        width:350px;
-        margin:20px;
-      }
-      li img.b{
         width:250px;
         margin:10px;
       }
@@ -61,16 +57,10 @@
         position:relative;
         left:-25px;
       }
-      .a{
-        background-color: white;
-      }
-      .b{
-        background-color: red;
-      }
     </style>
   </head>
   <body>
-    <ul id="imgList" class="a">
+    <ul id="imgList">
       <li><img src="img/img1.jpg" alt="img1" onload="setThePadding(this)" onclick="picDisp(this)"/></li>
       <li><img src="img/img2.jpg" alt="img2" onload="setThePadding(this)" onclick="picDisp(this)"/></li>
       <li><img src="img/img3.jpg" alt="img3" onload="setThePadding(this)" onclick="picDisp(this)"/></li>
@@ -93,6 +83,8 @@
     <script>
     var PicBoard = document.getElementById("picBoard");
     var PicDisp = document.getElementById("picDisp");
+    var ulEle = document.getElementById("imgList");
+    var currentActive;
     function setThePadding(elem){
       var elemHeight = getTheHeight(elem);
       var padding = (300 - elemHeight)/2;
@@ -112,12 +104,28 @@
       }
     }
     function picDisp(ele){
-      console.log()
       var picSrc = ele.src;
+      currentActive = ele;
       PicBoard.src = picSrc;
       //now the img#picBoard start to load, when loading complete the picLoaded function would fireup
       // console.log(getTheHeight(picBoard));
       PicDisp.style.display = "block";
+    }
+    function prevImg(){
+      console.log(currentActive);
+      console.log(currentActive.parentElement);
+      var picEle = currentActive.parentElement.previousElementSibling.children[0];
+      currentActive = picEle;
+      //前一个图片的img对象
+      console.log(picEle);
+    }
+    function nextImg(){
+      console.log(currentActive);
+      console.log(currentActive.parentElement);
+      var picEle = currentActive.parentElement.nextElementSibling.children[0];
+      currentActive = picEle;
+      //下一个图片的img对象
+      console.log(picEle)
     }
     function picDisappear(){
       PicDisp.style.paddingTop = "0";

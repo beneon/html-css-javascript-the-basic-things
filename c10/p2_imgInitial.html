@@ -6,7 +6,7 @@
     <style media="screen">
       ul{
         list-style-type: none;
-        width:95%;
+        width:80%;
         margin: 0 auto;
       }
       li{
@@ -14,26 +14,23 @@
         display:inline-block;
       }
       img{
-        width:250px;
+        width:300px;
         margin:10px;
       }
     </style>
   </head>
   <body>
     <ul>
-      <li><img id = "a1" src="img/img1.jpg" alt="img1" onload="logAlt(this)"/></li>
-      <li><img src="img/img2.jpg" alt="img2"  onload="logAlt(this)"/></li>
-      <li><img src="img/img3.jpg" alt="img3" onload="logAlt(this)"/></li>
-      <li><img src="img/img4.jpg" alt="img4" onload="logAlt(this)"/></li>
-      <li><img src="img/img7.jpg" alt="img5" onload="logAlt(this)"/></li>
-      <li><img src="img/img6.jpg" alt="img6" onload="logAlt(this)"/></li>
+      <li><img src="img/img1.jpg" alt="img1" onmouseover="logAlt(this)"/></li>
+      <li><img src="img/img2.jpg" alt="img2" onmouseover="logAlt(this)"/></li>
+      <li><img src="img/img3.jpg" alt="img3" onmouseover="logAlt(this)"/></li>
+      <li><img src="img/img4.jpg" alt="img4" onmouseover="logAlt(this)"/></li>
+      <li><img src="img/img7.jpg" alt="img5" onmouseover="logAlt(this)"/></li>
+      <li><img src="img/img6.jpg" alt="img6" onmouseover="logAlt(this)"/></li>
     </ul>
     <script type="text/javascript">
       function logAlt(elem){
-        // console.log(elem.alt+","+elem.height);
-        var padd = (250-elem.height)/2;
-        // console.log(padd)
-        elem.style.padding = padd+"px 0";
+        console.log(elem.alt);
       }
     </script>
   </body>
