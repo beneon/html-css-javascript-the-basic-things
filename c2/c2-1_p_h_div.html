@@ -1,0 +1,72 @@
+<!DOCTYPE html><!--表示html5标准-->
+<html lang="zh-cn"><!--lang="zh-cn"：语言属性设置为简体中文-->
+<head>
+  <meta charset="utf-8"><!--字符集设置为utf-8-->
+  <title>good old tags,p,h and div</title><!--title显示在浏览器标签上面-->
+  <link rel="stylesheet" href="css/master.css" >
+  <!--这是一段注释，link rel="stylesheet"这一行我们没有讲，这个是加入css的时候会用到的一个语句-->
+</head>
+<!--1到8行的代码一般是常规会放的-->
+<body>
+  <!--下面的代码结构大多是
+  div
+    h1 < 用来放标题
+    p < 用来放内容
+  而不是
+  div
+    p < 放标题
+    p < 放内容
+  用h把标题单独扩出来不止是为了能让字大一些（如果通过设置css格式完全可以让h比p字号还小）主要是为了让标记体现内容-->
+  <div>
+  <h1>段落标记</h1>
+  <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+  <p>aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div>
+    <h1>标题级别，大标题</h1>
+    <h2>Lorem ipsum dolor sit amet</h2>
+    <p> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <h2> Duis aute irure dolor in reprehenderit</h2>
+    <p> in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <!--注意下面有序列表的写法，尤其是嵌套的写法-->
+  <div>
+    <h1>有序列表和无序列表</h1>
+    <h2>有序列表</h2>
+    <ol>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li> consectetur adipisicing elit</li>
+      <li>sed do eiusmod tempor incididunt ut</li>
+    </ol>
+    <h2>无序列表</h2>
+    <ul>
+      <li> labore et dolore magna aliqua.</li>
+      <li> Ut enim ad minim veniam, quis nostrud</li>
+      <li> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </li>
+    </ul>
+    <h2>列表嵌套</h2>
+    <ul>
+      <li> labore et dolore magna aliqua.</li>
+      <li> Ut enim ad minim veniam, quis nostrud</li>
+      <li> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <ul>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+          <li>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+          <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h1>图文混排</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+    <img src="img/thumb_starry_night.jpg" alt="starry night">
+    <p> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+
+      <img src="img/zhihu_logo.png" alt="知乎logo" width="50">
+
+      sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</body>
+</html>
