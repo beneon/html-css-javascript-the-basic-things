@@ -1,6 +1,6 @@
 ## 常用Html标签
 |标记|作用|类型|
-|---|---|
+|---|---|---|
 |P|段落|Block|
 |A|超链接|Inline|
 |Img|图片||
@@ -24,4 +24,4 @@ https://github.com/beneon/html-css-javascript-the-basic-things
 
 ## 编程工具
 atom: https://atom.io/
-atom绿色版 https://sourceforge.net/projects/atomportable/
+atom绿色版 http://pan.baidu.com/s/1mhMX7iK
