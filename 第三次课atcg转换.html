@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>atcg convert</title>
+	</head>
+	<body>
+		<div class="">
+			<input type="text" id="inputGene" name="" value="input the gene here">
+			<button type="button" name="button" onclick = "convertGene()">计算一下</button>
+		</div>
+		<div class="">
+			<input type="text" id="output" name="" value="output in here">
+		</div>
+		<script type="text/javascript">
+		var outputDisp = document.getElementById('output')
+		var inputF = document.getElementById('inputGene')
+		function convertGene(){
+			var geneSrc = inputF.value
+			outputDisp.value = ""
+			for(var i = 0;i<geneSrc.length;i++){
+				outputDisp.value = outputDisp.value +  singleConvert(geneSrc[i])
+			}
+		}
+		function	singleConvert(i){
+			// 如果inputF 是 a 那么 outputDisp 就是 t
+			// 如果inputF 是 t 那么 outputDisp 就是 a
+			// 如果inputF 是 c 那么 outputDisp 就是 g
+			// 如果inputF 是 g 那么 outputDisp 就是 c
+			var result
+			if(i == "a"){
+				result = "t"
+			}
+			if(i == "t"){
+				result = "a"
+			}
+			if(i == "c"){
+				result = "g"
+			}
+			if(i == "g"){
+				result = "c"
+			}
+			return result
+		}
+		</script>
+	</body>
+</html>
