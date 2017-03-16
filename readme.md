@@ -25,3 +25,9 @@ https://github.com/beneon/html-css-javascript-the-basic-things
 ## 编程工具
 atom: https://atom.io/
 atom绿色版 http://pan.baidu.com/s/1mhMX7iK
+
+## 第三次课课后练习
+- 对照[第三次课atcg转换.html](https://github.com/beneon/html-css-javascript-the-basic-things/blob/master/%E7%AC%AC%E4%B8%89%E6%AC%A1%E8%AF%BEatcg%E8%BD%AC%E6%8D%A2.html)自己写一次代码，试运行，除错
+- 试着加上文字调转功能(atcg >> gcta)
+- 试着添加u转换为a的功能
+- 试着识别输入的是否只有atcgu 这5个英文字符
