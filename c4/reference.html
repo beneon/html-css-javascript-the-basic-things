@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>textarea test</title>
+	</head>
+	<body>
+		<div class="">
+			<textarea id="refArea" name="name" rows="16" cols="80" class="input multi"></textarea>
+		</div>
+		<div class="">
+			<button type="button" name="button" onclick="txtProc()">convert</button>
+		</div>
+		<div class="" id="outputArea">
+		</div>
+		<script type="text/javascript">
+			var output = document.getElementById("outputArea")
+			var ref = document.getElementById("refArea")
+			var p = document.createElement('p')
+			output.appendChild(p)
+			console.log(output);
+			function txtProc(){
+				console.log(ref.value);
+				var refArr = ref.value.split(/\n/g)
+				console.log(refArr.length);
+			}
+		</script>
+	</body>
+</html>

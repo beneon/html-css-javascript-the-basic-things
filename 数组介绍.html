@@ -15,20 +15,14 @@
 		<script type="text/javascript">
 		var outputDisp = document.getElementById('output')
 		var inputF = document.getElementById('inputGene')
+		var geneSrc = "aaa"
 		function convertGene(){
 			var geneSrc = inputF.value
-			outputDisp.value = ""
-			// input the gene here
-			// var geneArr = geneSrc.split("").map(singleConvert).reverse()
-			// outputDisp.value = geneArr.join("")
-			for(var i = 0;i<geneSrc.length;i++){
-				outputDisp.value = outputDisp.value +  singleConvert(geneSrc[i])
-			//
-			// 	// atcg>>tagc>>cgat
-			// 	// reverse:
-			// 	// join:
-			// 	// statistic:a?t?c?g?>>1.forEach, 2.filter
-			// }
+			var geneArr = geneSrc.split("").map(singleConvert).reverse()
+			outputDisp.value = geneArr.join("")
+			for (var i = 0; i < geneSrc.length; i++) {
+				singleConvert(geneSrc[i])
+			}
 		}
 		function	singleConvert(i){
 			// 如果inputF 是 a 那么 outputDisp 就是 t
