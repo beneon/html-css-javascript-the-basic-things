@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>textarea test</title>
+	</head>
+	<body>
+		<div class="">
+			<textarea id="inputArea" name="name" rows="16" cols="80" class="input multi"></textarea>
+		</div>
+		<div class="">
+			<button type="button" name="button" onclick="txtProc()">convert</button>
+		</div>
+		<pre class="" id="outputArea">
+		</pre>
+		<script type="text/javascript">
+		var ref = document.getElementById("inputArea")
+		var txt
+		function txtProc(){
+			txt = ref.value
+			var reg = /^\d[．\.]*\s*(.*)/
+			var txtArr = txt.split(/\r?\n/)
+			txtArr.forEach()
+			map()
+			filter()
+		}
+		</script>
+	</body>
+</html>
