@@ -15,14 +15,39 @@
 		</pre>
 		<script type="text/javascript">
 		var ref = document.getElementById("inputArea")
-		var txt
 		function txtProc(){
-			txt = ref.value
+			var txt = ref.value
 			var reg = /^\d[．\.]*\s*(.*)/
 			var txtArr = txt.split(/\r?\n/)
-			txtArr.forEach()
-			map()
-			filter()
+			// 将文字转换成题库数据包括三个过程 1. 分拆(txt.split)，2.组装(merger)，3.重定义，上面的是分拆，接下来是组装
+			var comb = merger(txtArr,reg)
+			console.log(comb);
+			function merger(arr,reg){
+				// var spliceP = arr.map(function(e,i,a){
+				// 	if(reg.exec(e)!==null){
+				// 		return i
+				// 	}else{
+				// 		return null
+				// 	}
+				// }).filter(function(e){
+				// 	return e!==null
+				// })
+				// 这里用map写反倒有些累赘了
+				var spliceP = []
+				arr.forEach(function(e,i,a){
+					if(reg.exec(e)!== null){
+						spliceP.push(i)
+					}
+				})
+				var comb = spliceP.map(function(e,i,a){
+					if(i==a.length-1){
+						return arr.splice(e)
+					}else{
+						return arr.splice(e,a[i+1])
+					}
+				})
+				return comb
+			}
 		}
 		</script>
 	</body>
