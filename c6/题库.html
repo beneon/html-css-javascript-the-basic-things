@@ -41,9 +41,9 @@
 				})
 				var comb = spliceP.map(function(e,i,a){
 					if(i==a.length-1){
-						return arr.splice(e)
+						return arr.slice(e)
 					}else{
-						return arr.splice(e,a[i+1])
+						return arr.slice(e,a[i+1])
 					}
 				})
 				return comb
