@@ -1,0 +1,20 @@
+miRNA作为生物标志物用于监测肿瘤主要基于以下发现：(1)miRNA在肿瘤的发生发展中具有重要的作用，参与了肿瘤发生发展的各个阶段。结肠癌发生发展的各个阶段，经历了不典型增生、腺瘤、癌及肿瘤转移等一系列变化，每一个阶段都有相应的基因发生改变，同时也有调控这些基因的 miR-NA发生变化(图 1)。事实上，miRNA与基因之间相互调控，共同突破平衡，才导致肿瘤的发生发展
+[1]。作为肿瘤发生的重要信号通路，miRNA参与了几乎所有的信号通路(图 2)。(2)miRNA具有很好的组织特异性。经筛查检测 48个 miRNA确定肿瘤的组织来源准确率达 90％[2]。(3)miRNA具有肿瘤发生的阶段特异性，同一种肿瘤在发生发展不同分期阶段具有不同的 miRNA表达谱 [3-4]。(4)miR-NA分子较小，在石蜡包埋的组织中较 mRNA更为稳定，对于石蜡保存的组织检测 miRNA将更为准确
+[5]。(5)最近有报道[6，7]证实血清或者血浆中游离
+miRNA也是有价值的肿瘤监测指标，能够稳定地被检测并且提示肿瘤状态，使 miRNA作为新的肿瘤标志物具有较好的应用前景。
+我们以 112例胸腹水为检查对象，筛选并测定了 miRNAs的表达，发现 miR-24和 miR-30d在良恶性胸腹水中存在差异表达，并且这一差异在胸水中更为明显。提示 miRNA有可能在良恶性胸腹水鉴别诊断上发挥参考作用。
+2　miRNA与肿瘤药物治疗
+miRNA在肿瘤的发生、发展的每一个阶段均发挥着重要的作用，因此，作为肿瘤诊断及预后的新一代分子标志，miRNA在近年来受到了越来越多的关注。已有研究报道 miRNA的表达水平与慢性粒细胞白血病、肺癌、胰腺癌、神经母细胞瘤等恶性肿瘤的预后密切相关。在肿瘤的药物治疗领域，不同 miRNA的表达谱与抗肿瘤药物疗效的相关性也引起了肿瘤研究者的广泛兴趣。
+miRNA与化疗药物敏感性的研究最初由 Meng 等[8]于 2006年在 Gastroenterology杂志上报道。该研究表明，抑制 miR-21及 miR-200b的表达能够增加胆管癌细胞对健择的敏感性。深入其机理研究显示 miR-21可能通过调节 PTEN依赖的 PI3K信号通路从而影响健择相关的细胞凋亡情况。miR-21高表达还可以使肿瘤细胞对 VM-26、拓扑替康等抗肿瘤药物的敏感性降低[4，8-9]。此外，临床相关的研究还表明 miR-21高表达的肺癌及结肠癌预后较差，对于化疗的反应性也较差[10]。miR-21是目前唯一的在几乎所有肿瘤中表达上调的 miRNA，其参与了肿...
+
+1. 刘宝瑞, 谢丽. miRNA:新一代肿瘤生物标志[J]. 临床肿瘤学杂志, 2010, 15(1):1-5.
+2. 叶茂, 陈跃磊, 明镇寰. miRNA(microRNA)家族的研究进展[J]. 生物化学与生物物理进展, 2003, 30(3):370-374.
+3. 李成梅, 郑继刚, 杜桂森. miRNA:一种新的基因表达调节子[J]. 遗传, 2004, 26(1):133-136.
+4. 马圣运, 白玉, 韩凝,等. miRNA~*生物合成及其功能研究的新发现[J]. 遗传, 2012, 34(4):383-388.
+5. Wang L N, Chen W W, Zhang J, et al. The miRNA let-7a1 inhibits the expression of insulin-like growth factor 1 receptor (IGF1R) in prostate cancer PC-3 cells.[J]. Asian Journal of Andrology, 2013, 15(6):753-758.
+6. Kim W, Benhamed M, Servet C, et al. Histone acetyltransferase GCN5 interferes with the miRNA pathway in Arabidopsis. Cell Res[J]. Cell Research, 2009, 19(7):899-909.
+7. Tang R. Mouse miRNA-709 directly regulates miRNA-15a/16-1 biogenesis at the posttranscriptional level in the nucleus: evidence for a microRNA hierarchy system[J]. Cell Research, 2012, 22(3):504.
+8. Adhikari S, Turner M, Subramanian S. Hairpin Priming Is Better Suited than In Vitro, Polyadenylation to Generate cDNA for Plant miRNA qPCR[J]. Molecular Plant, 2013, 6(1):229-231.
+9. 杨暘, 康春生. miRNA-21与肿瘤相关研究新进展[J]. 中国肿瘤临床, 2011, 38(6):357-360.
+10. 郭晓东, 熊璐, 张红萍,等. miRNA-181在肝癌中表达变化的研究[J]. 现代生物医学进展, 2013, 13(7):869-871.
+11. 赵爽, 王海峰, 刘凌琪,等. miRNA-142-5p在肾细胞癌中高表达的研究[J]. 山东医药, 2008, 48(41):12-14.
