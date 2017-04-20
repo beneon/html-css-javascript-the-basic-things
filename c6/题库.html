@@ -16,23 +16,41 @@
 		<script type="text/javascript">
 		var ref = document.getElementById("inputArea")
 		function txtProc(){
+			var regQuestion = /^\d{1,3}[．\.]*\s*(.*)/
+			var regOption = /^[A-z][．\.]*\s*([^\s]+)\s*/
+			var regAns = /^.*([A-z ]+)$/
 			var txt = ref.value
-			var reg = /^\d[．\.]*\s*(.*)/
 			var txtArr = txt.split(/\r?\n/)
 			// 将文字转换成题库数据包括三个过程 1. 分拆(txt.split)，2.组装(merger)，3.重定义，上面的是分拆，接下来是组装
-			var comb = merger(txtArr,reg)
-			console.log(comb);
+			var comb = merger(txtArr,regQuestion)
+			var datas = parser(comb)
+			console.log(datas);
+			function parser(data){
+				var result = []
+				result = data.map(function(e,i,a){
+					var quest, ans, option
+					var optionArr
+					// 这里简化了实际的情况，题干只占一行，答案总在最后一行。要从一个数组里面拿出来第一个值，用shift（），拿出来最后一个值用pop（）
+					// 提取题干，去除开头的数字编号
+					quest = e.shift().replace(regQuestion,"$1")
+					// 提取答案，只保留答案内容
+					ans = e.pop().replace(regAns,"$1")
+					// 选项合一，去除开头的abcd
+					option = e.join(" ")
+					var optionArr = []
+					while(regOption.exec(option)!==null){
+						optionArr.push(regOption.exec(option)[1])
+						option = option.replace(regOption,"")
+					}
+					var result = {}
+					result.quest = quest
+					result.option = optionArr
+					result.ans = ans
+					return result
+				})
+				return result
+			}
 			function merger(arr,reg){
-				// var spliceP = arr.map(function(e,i,a){
-				// 	if(reg.exec(e)!==null){
-				// 		return i
-				// 	}else{
-				// 		return null
-				// 	}
-				// }).filter(function(e){
-				// 	return e!==null
-				// })
-				// 这里用map写反倒有些累赘了
 				var spliceP = []
 				arr.forEach(function(e,i,a){
 					if(reg.exec(e)!== null){
