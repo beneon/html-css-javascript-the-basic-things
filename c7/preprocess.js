@@ -8,8 +8,8 @@ function txtProc(data){
 	var result = quanjiao2Banjiao(data)
 	result = noSpaceBetweenChineseChara(result)
 	result = mergeTheRef(result)
+	fs.writeFile(path.join(__dirname,'refMerged.txt'),result.ref.join("\n"))
 	var refData = refDataExtract(result.ref)
-	console.log(refData);
 	// fs.writeFile(path.join(__dirname,"output2.txt"),result)
 }
 function refDataExtract(ref){
