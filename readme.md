@@ -1,4 +1,9 @@
 ## 通知：
+### 2017年05月05日12:11:43：
+我写了一些练习题放在
+[这里](https://github.com/beneon/html-css-javascript-the-basic-things/wiki/%E7%BB%83%E4%B9%A0%E9%A2%98)，尽快过去完成里面的练习题1~8。同时请注意这也是我们考试时候会采用的形式。
+
+### 之前的通知
 今后练习题以及额外的阅读材料会放在wiki下面：
 
 https://github.com/beneon/html-css-javascript-the-basic-things/wiki
