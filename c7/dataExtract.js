@@ -5,20 +5,28 @@ fs.readFile(path.join(__dirname,"refMerged.txt"),'utf8',function(err,file){
 	dataExtract(file)
 })
 function dataExtract(file){
-	var refArr = file.split('\n')
-
+	var refArr = file.trim().split('\n')
+	refArr = refArr.map(delimReg).map(trimming)
+	fs.writeFile('output.json',JSON.stringify(refArr,null,'\t'),function(err){
+		if(err)throw err
+		console.log("done");
+	})
 }
 
-var l = [5,6,3,5]
-var a = l.filter(function(e){
-	return e<4
-})
-var b = l.map(function(e,i,a){
-	return e+i
-})
-var c = l.forEach(function(e,i,a){
-	return e
-})
-console.log(a);
-console.log(b);
-console.log(c);
+function delimReg(e){
+	var regDelim = /^\d+\.\s+([^\.]*)\.(.*)\[[A-Z]\]\.(.*),(.*),(.*):(.*)\./
+	if(regDelim.test(e)){
+		return regDelim.exec(e).slice(1)
+	}else{
+		return e
+	}
+}
+
+function trimming(e){
+	var result = {}
+	result.fa = e[0].split(',')[0].trim()
+	result.title = e[1].trim()
+	result.journal = e[2].trim()
+	result.ypub = e[3].trim()
+	return result
+}
