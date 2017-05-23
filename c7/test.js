@@ -1,5 +1,15 @@
-var ref = "8. Adhikari S, Turner M, Subramanian S. Hairpin Priming Is Better Suited than In Vitro, Polyadenylation to Generate cDNA for Plant miRNA qPCR[J]. Molecular Plant, 2013, 6(1):229-231."
-var reg1 = /\d+\.(.*)/
-var reg2 = /\.(.*)\[[A-Z]\]/
-console.log(reg1.exec(ref));
-console.log(reg2.exec(ref));
+person = "a"
+role = "d"
+function greet() {
+  var reply = [this.person, 'Is An Awesome', this.role].join(' ');
+  console.log(reply);
+}
+var i = {
+  person: 'Douglas Crockford', role: 'Javascript Developer'
+};
+var t = {
+	person:"a",role:'joke'
+}
+greet.call()
+greet.call(t)
+greet.call(i); // Douglas Crockford Is An Awesome Javascript Developer

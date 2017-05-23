@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="" onmouseover="mouseover()" onclick = "mouseclick(this)">
+			a div with events
+		</div>
+		<div class="" id="div2">
+			div2
+		</div>
+		<script type="text/javascript">
+			function mouseover(){
+				console.log("mouse over");
+			}
+			function mouseclick(e){
+				console.log(e);
+			}
+			var div = document.getElementById("div2")
+			div.addEventListener("click", modifyText());
+			function modifyText(){
+				console.log("aabbcd");
+			}
+
+		</script>
+	</body>
+</html>
